@@ -1,0 +1,38 @@
+body {
+    background-image: linear-gradient(#010216, #03052f,#080c56);
+    height: 100vh; 
+    overflow: hidden;
+    animation: grow 2s;
+}
+a {
+    text-decoration: none;
+}
+h3 {
+    color: white;
+}
+
+ul li {
+    color: white;
+    list-style: none;
+    width: 100%;
+    animation: roll 5s ease-in-out forwards;
+}
+ul {
+    display: block;
+    height: 1em;
+    overflow: hidden;
+}
+.heart {
+    overflow: hidden;
+}
+@keyframes grow{
+    0%{transform: scale(2);}
+    100%{transform: scale(1);}
+}
+@keyframes roll {
+    0%{transform: translate(0, -15em)}
+    20%{transform: translate(0, -10em)}
+}
+
+
+/*마음*/
