@@ -9,22 +9,31 @@ a {
 }
 h3 {
     color: white;
+    text-align: center;
 }
 
 ul li {
+    text-align: center;
     color: white;
     list-style: none;
     width: 100%;
     animation: roll 5s ease-in-out forwards;
 }
 ul {
+    font-size: 70px;
     display: block;
     height: 1em;
     overflow: hidden;
 }
-.heart {
-    overflow: hidden;
+.next h3 {
+    color: #fadf89;
 }
+.lineone{
+}
+.linetwo{
+}
+.linethree{}
+
 @keyframes grow{
     0%{transform: scale(2);}
     100%{transform: scale(1);}
