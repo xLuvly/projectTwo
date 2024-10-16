@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(#e377a2, #ffceba,#ffffff);
+    height: 100vh;
+}
+
+h2, h3 {
+    color: white
+}
+a {
+    text-decoration: none;
+}
+.next h2 {
+    color: #fadf89;
+}

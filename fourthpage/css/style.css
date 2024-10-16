@@ -1,0 +1,28 @@
+body {
+    background-image: linear-gradient(#e377a2, #ffceba,#ffffff);
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: aqua;
+}
+
+ul li {
+    text-align: center;
+    color: white;
+    list-style: none;
+    animation: roll 5s ease-in-out forwards;
+}
+ul {
+    font-size: 50px;
+    display: block;
+    overflow: hidden;
+}
+
+
+@keyframes roll {
+    0%{transform: translate(0, -15em)}
+    20%{transform: translate(0, -10em)}
+}

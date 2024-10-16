@@ -2,14 +2,30 @@ body {
     background-image: linear-gradient(#010216, #03052f,#080c56);
     height: 100vh; 
     overflow: hidden;
-    animation: grow 2s;
+    padding: 10%;
+
+}
+.flexcontainer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.flexcontainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.flexcontainer3 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 a {
     text-decoration: none;
 }
 h3 {
     color: white;
-    text-align: center;
+    margin: 50px 0px 0px 50px;
 }
 
 ul li {
@@ -18,6 +34,7 @@ ul li {
     list-style: none;
     width: 100%;
     animation: roll 5s ease-in-out forwards;
+    margin: 0px 20px 0px 0px;
 }
 ul {
     font-size: 70px;
@@ -25,14 +42,45 @@ ul {
     height: 1em;
     overflow: hidden;
 }
+.heart {
+    display: inline;
+    position: absolute;
+    top: 30%;
+}
+.heart li {
+    color: aqua;
+}
 .next h3 {
     color: #fadf89;
 }
 .lineone{
+    font-size: 30px;
 }
 .linetwo{
+    color: aqua;
+    font-size: 60px;
 }
-.linethree{}
+.linethree{
+    top: 20%;
+    font-size: 30px;
+}
+.linefive {
+    font-size: 25px;
+    padding-left: 13%;
+}
+.linesix {
+    padding-left: 45%;
+    font-size: 60px;
+    color: aqua;
+}
+.lineseven {
+    font-size: 20px;
+}
+.next .lineeight{
+    font-size: 80px;
+}
+
+
 
 @keyframes grow{
     0%{transform: scale(2);}

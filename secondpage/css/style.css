@@ -13,3 +13,28 @@ a {
 .next h2 {
     color: #fadf89;
 }
+.next {
+    font-size: 50px;
+}
+.next h2:hover {
+    color: #ffffff;
+    text-shadow: 0 0 100px #e377a2;
+}
+
+ul li {
+    text-align: center;
+    color: white;
+    list-style: none;
+    width: 100%;
+    animation: roll 5s ease-in-out forwards;
+}
+ul {
+    font-size: 50px;
+    display: block;
+    height: 1em;
+    overflow: hidden;
+}
+@keyframes roll {
+    0%{transform: translate(0, -15em)}
+    20%{transform: translate(0, -10em)}
+}
