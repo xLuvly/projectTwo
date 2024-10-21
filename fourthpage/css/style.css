@@ -1,28 +1,171 @@
 body {
-    background-image: linear-gradient(#e377a2, #ffceba,#ffffff);
+    background-image: radial-gradient(#da3d8e, #cf9f79);
+    font-family: 'Comfortaa';
     height: 100vh;
+    display: flex;
+    margin: 0;
+}
+.circle1 {
+    position: absolute;
+    align-items: center;
+    left: 25%;
+    width: 763px;
+    height: 763px;
+    background-color: #f4cde0;
+    border-radius: 50%;
+    z-index: 98;
+}
+.circle2 {
+    position: absolute;
+    align-items: center;
+    left: 28.5%;
+    top: 7%;
+    width: 663px;
+    height: 663px;
+    background-color: #67332b;
+    border-radius: 50%;
+    z-index: 99;
+}
+.circle3 {
+    opacity: 30%;
+    position: absolute;
+    align-items: center;
+    left: 31.5%;
+    top: 13.5%;
+    width: 563px;
+    height: 563px;
+    background-color: #e1b3ac;
+    border-radius: 50%;
+    z-index: 99;
+}
+.circle4 {
+    position: absolute;
+    align-items: center;
+    left: 34%;
+    top: 18.5%;
+    width: 493px;
+    height: 493px;
+    background-color: #67332b;
+    border-radius: 50%;
+    z-index: 99;
+}
+.circle5 {
+    opacity: 30%;
+    position: absolute;
+    align-items: center;
+    left: 38%;
+    top: 26%;
+    width: 363px;
+    height: 363px;
+    background-color: #e1b3ac;
+    border-radius: 50%;
+    z-index: 99;
+}
+.circle6 {
+    position: absolute;
+    align-items: center;
+    left: 38.7%;
+    top: 27.5%;
+    width: 343px;
+    height: 343px;
+    background-color: #67332b;
+    border-radius: 50%;
+    z-index: 99;
+}
+.circle3, .circle4, .circle5, .circle6 {
+    animation: pulse 3s ease-in-out infinite;
+}
+.container {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.hot {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.one {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 1s;
+}
+.h {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 2s;
+}
+.o {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 3s;
+}
+.t {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 4s;
+}
+.two {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 5s;
+}
+.three {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 6s;
+}
+.four {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 7s;
+}
+.five {
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 8s;
 }
 a {
     text-decoration: none;
-    text-align: center;
-    font-size: 30px;
-    color: aqua;
-}
-
-ul li {
-    text-align: center;
     color: white;
-    list-style: none;
-    animation: roll 5s ease-in-out forwards;
 }
-ul {
+.magic {
+    padding-top: 5px;
+    font-family: 'Modak';
+    letter-spacing: 10px;
     font-size: 50px;
-    display: block;
-    overflow: hidden;
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 9s;
 }
 
-
-@keyframes roll {
-    0%{transform: translate(0, -15em)}
-    20%{transform: translate(0, -10em)}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

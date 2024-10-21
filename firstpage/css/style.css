@@ -1,95 +1,186 @@
+*{
+    font-family: 'comfortaa';
+    color: white;
+}
 body {
-    background-image: linear-gradient(#010216, #03052f,#080c56);
+    background-image: linear-gradient(135deg, #fc98a9, #ffdfa0);
     height: 100vh; 
     overflow: hidden;
-    padding: 10%;
+}
+h3, h2{
+    text-align: center;
+}
 
-}
-.flexcontainer1 {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-.flexcontainer2 {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-.flexcontainer3 {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-a {
+a{
     text-decoration: none;
-}
-h3 {
-    color: white;
-    margin: 50px 0px 0px 50px;
+    color: black;
 }
 
 ul li {
-    text-align: center;
-    color: white;
     list-style: none;
     width: 100%;
-    animation: roll 5s ease-in-out forwards;
-    margin: 0px 20px 0px 0px;
 }
 ul {
     font-size: 70px;
     display: block;
-    height: 1em;
     overflow: hidden;
 }
-.heart {
-    display: inline;
-    position: absolute;
-    top: 30%;
+.top {
+    padding-top: 5%;
 }
-.heart li {
-    color: aqua;
+.wanted {
+    position: relative;
+    font-size: 70px;
 }
-.next h3 {
-    color: #fadf89;
+.lineone {
+    opacity:0;
+    position: relative;
+    animation: fade 2s forwards;
+    animation-delay: 0.5s;
 }
-.lineone{
-    font-size: 30px;
+.linetwo {
+    opacity: 0;
+    position: relative;
+    animation: fade 4s forwards;
+    animation-delay: 1s;
 }
-.linetwo{
-    color: aqua;
-    font-size: 60px;
+.linethree {
+    opacity: 0;
+    position: relative;
+    animation: fade 6s forwards;
+    animation-delay: 1.5s;
 }
-.linethree{
-    top: 20%;
-    font-size: 30px;
+.linefour {
+    opacity: 0;
+    position: relative;
+    animation: fade 8s forwards;
+    animation-delay: 2s;
 }
 .linefive {
-    font-size: 25px;
-    padding-left: 13%;
+    opacity: 0;
+    position: relative;
+    animation: fade 10s forwards;
+    animation-delay: 2.5s;
 }
-.linesix {
-    padding-left: 45%;
+.comfort {
+    opacity: 0;
+    font-family: 'Modak';
+    font-size: 120px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left:30%;
+    text-align: center;
+    cursor: pointer;
+    animation: fade 10s forwards;
+    animation-delay: 3s;
+    letter-spacing: 20px;
+}
+
+/*
+.comfort ul {
+    height: 2em;
+}
+.comfort li{
+    font-family: 'Modak';
+    font-size: 120px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    left: -1.5%;
+    animation: roll 8s ease-in-out forwards;
+    animation-delay: 3s;
+}
+*/
+
+.middle {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.wrapper .your{
+    position: relative;
     font-size: 60px;
-    color: aqua;
+    text-transform: uppercase;
+    left:15%;
 }
-.lineseven {
-    font-size: 20px;
+.wrapper {
+    opacity: 0; /* Initially invisible */
+    transform: translateX(-100px); /* Start off the screen to the right */
+    animation: slideIn 3s forwards; /* Apply slide-in animation */
+    animation-delay: 5s; /* Delay for the wrapper */
 }
-.next .lineeight{
-    font-size: 80px;
+.heartContainer{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.heart ul {
+    height: 1em;
+}
+.heart li {
+    opacity: 0;
+    text-shadow: white;
+    position: relative;
+    text-align: center;
+    left: 5%;
+    width: 5em;
+    animation: roll 6s linear forwards;
+    animation-delay: 5s;
+}
+.heart a{
+    color: #f71c20;
+}
+
+.heart:hover {
+    animation: stretch 3s ease-in-out infinite;
 }
 
 
-
-@keyframes grow{
-    0%{transform: scale(2);}
-    100%{transform: scale(1);}
-}
 @keyframes roll {
-    0%{transform: translate(0, -15em)}
-    20%{transform: translate(0, -10em)}
+    0% {
+        opacity: 1;
+        transform: translate(0, -15em); 
+    }
+    20% {
+        transform: translate(0, -10em);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0em); 
+    }
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateX(-100px); /* Start from the right */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* Move to original position */
+    }
+}
+@keyframes stretch {
+    0% {transform: scaleY(1)}
+    25%{transform: scaleX(2.5) scaleY(2.5)}
+    50% {transform: scaleX(4) scaleY(4)}
+    75%{transform: scaleX(2.5) scaleY(2.5)}
+    100% {transform: scaleY(1)}
+}
+@keyframes fade {
+    0% { opacity: 0;
+        transform: translateY(30px);}
+    60% {opacity: 1;
+        transform: translateY(-10px);}
+    100% {opacity: 1;
+        transform: translateY(0);}
 }
 
 
-/*마음*/
+
+/*
+마음 - heart
+편안 - comfort
+*/

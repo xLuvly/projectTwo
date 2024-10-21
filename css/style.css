@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(#060a4c,#4560ea);
+    background-image: linear-gradient(#030642,#7145ea, #dc92fa);
     height: 100vh; 
     overflow: hidden;
 }
@@ -9,8 +9,12 @@ body{
     position: absolute;
     top: 30%;
     width: 100%;
-    color: #fadf89;
+    color: #fcf3d3;
     font-family: 'Satisfy';
+
+    text-shadow: 5px 5px 0px #ff7c57, 
+    10px 10px 0px #e437a5, 
+    15px 15px 0px  #7739ab;
 }
 .title a {
     text-decoration: none;
@@ -23,8 +27,9 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-image: radial-gradient(#221ba8, #040635);
-    box-shadow: 0 0 60px 60px#060a4c;
+    background-image: radial-gradient(#90c2e9, #ffff);
+    opacity: 75%;
+    box-shadow: 0 0 20px 20px#e9eaff;
 }
 
 h2, h3 {
