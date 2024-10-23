@@ -6,7 +6,7 @@ body {
     align-items: center;
     font-family: 'Modak', sans-serif;
     text-transform: uppercase;
-    animation: backgroundChange 5s infinite;
+    animation: backgroundChange 3s infinite;
 }
 a {
     text-decoration: none;
@@ -29,23 +29,23 @@ a {
 .end{
     opacity: 0;
     animation: fade 1s forwards;
-    animation-delay: 8s;
+    animation-delay: 9s;
     color: #ffd2f7;
     font-size: 30px;
 }
 .end2 {
     opacity: 0;
     animation: fade 1s forwards;
-    animation-delay: 8s;
+    animation-delay: 9s;
     color: #ffd2f7;
     font-size: 30px;
 }
 
 
 @keyframes backgroundChange {
-    0% { background-color: #8671f3; }
-    50% { background-color: #ffd2f7; }
-    100% { background-color: #8671f3; }
+    0% { background-color: #ffd2f7; }
+    50% { background-color: #8671f3; }
+    100% { background-color: #ffd2f7; }
 }
 
 @keyframes fade {

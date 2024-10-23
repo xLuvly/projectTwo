@@ -1,3 +1,12 @@
+/*
+Inspiration ->
+Title: CSS Tutorial: Animated Geometric Galaxy Background
+Author: Jen Saxena
+Date: February 13, 2018
+
+URL: https://medium.com/@jensaxena/css-tutorial-animated-geometric-galaxy-background-ad3835c36ce1
+*/
+
 body{
     background-image: linear-gradient(#030642,#7145ea, #dc92fa);
     height: 100vh; 
@@ -18,6 +27,20 @@ body{
 }
 .title a {
     text-decoration: none;
+}
+.credits h1 {
+    text-align: center; 
+    font-size: 40px;
+    position: absolute;
+    top: 53%;
+    left: -0.1%;
+    width: 100%;
+    color: #fcf3d3;
+    font-family: 'Satisfy';
+
+    text-shadow: 2px 2px 0px #ff7c57, 
+    4px 4px 0px #e437a5, 
+    6px 6px 0px  #7739ab;
 }
 .border{
     position: absolute;

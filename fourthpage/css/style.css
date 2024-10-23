@@ -1,5 +1,5 @@
 body {
-    background-image: radial-gradient(#da3d8e, #cf9f79);
+    background-image: radial-gradient(#67332b, #260c08);
     font-family: 'Comfortaa';
     height: 100vh;
     display: flex;
@@ -15,38 +15,30 @@ body {
     border-radius: 50%;
     z-index: 98;
 }
-.circle2 {
+.o1 {
     position: absolute;
     align-items: center;
-    left: 28.5%;
-    top: 7%;
-    width: 663px;
-    height: 663px;
-    background-color: #67332b;
-    border-radius: 50%;
+    font-size: 200px;
+    left: 25%;
+    color: #f4cde0;
     z-index: 99;
 }
-.circle3 {
-    opacity: 30%;
+.o2 {
     position: absolute;
     align-items: center;
-    left: 31.5%;
-    top: 13.5%;
-    width: 563px;
-    height: 563px;
-    background-color: #e1b3ac;
-    border-radius: 50%;
-    z-index: 99;
-}
-.circle4 {
-    position: absolute;
-    align-items: center;
-    left: 34%;
+    font-size: 100px;
     top: 18.5%;
-    width: 493px;
-    height: 493px;
-    background-color: #67332b;
-    border-radius: 50%;
+    left: 38%;
+    color: #f4cde0;
+    z-index: 99;
+}
+.o3 {
+    position: absolute;
+    align-items: center;
+    font-size: 50px;
+    top: 24.5%;
+    left: 44.5%;
+    color: #f4cde0;
     z-index: 99;
 }
 .circle5 {
@@ -72,7 +64,7 @@ body {
     border-radius: 50%;
     z-index: 99;
 }
-.circle3, .circle4, .circle5, .circle6 {
+.o1, .o2, .o3 {
     animation: pulse 3s ease-in-out infinite;
 }
 .container {
@@ -92,7 +84,7 @@ body {
     
 }
 .hot {
-    font-size: 50px;
+    font-size: 100px;
     text-transform: uppercase;
 }
 
@@ -102,39 +94,41 @@ body {
     animation-delay: 1s;
 }
 .h {
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    opacity: 0;
+    animation: fade 3s ease forwards;
+    animation-delay: 1s;
+}
+.t {
+    position: absolute;
+    top: 18%;
+    left: 75%;
     opacity: 0;
     animation: fade 3s ease forwards;
     animation-delay: 2s;
 }
-.o {
+.two {
+    padding-top:180px;
     opacity: 0;
     animation: fade 3s ease forwards;
     animation-delay: 3s;
 }
-.t {
+.three {
     opacity: 0;
     animation: fade 3s ease forwards;
     animation-delay: 4s;
 }
-.two {
+.four {
     opacity: 0;
     animation: fade 3s ease forwards;
     animation-delay: 5s;
 }
-.three {
-    opacity: 0;
-    animation: fade 3s ease forwards;
-    animation-delay: 6s;
-}
-.four {
-    opacity: 0;
-    animation: fade 3s ease forwards;
-    animation-delay: 7s;
-}
 .five {
     opacity: 0;
     animation: fade 3s ease forwards;
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 a {
     text-decoration: none;
@@ -147,7 +141,11 @@ a {
     font-size: 50px;
     opacity: 0;
     animation: fade 3s ease forwards;
-    animation-delay: 9s;
+    animation-delay: 7s;
+}
+.magic:hover {
+    color:#e1b3ac;
+    text-shadow: 10px 10px 5px #16060a;
 }
 
 @keyframes pulse {

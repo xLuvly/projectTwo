@@ -41,25 +41,25 @@ ul {
 .linetwo {
     opacity: 0;
     position: relative;
-    animation: fade 4s forwards;
+    animation: fade 2s forwards;
     animation-delay: 1s;
 }
 .linethree {
     opacity: 0;
     position: relative;
-    animation: fade 6s forwards;
+    animation: fade 2s forwards;
     animation-delay: 1.5s;
 }
 .linefour {
     opacity: 0;
     position: relative;
-    animation: fade 8s forwards;
+    animation: fade 2s forwards;
     animation-delay: 2s;
 }
 .linefive {
     opacity: 0;
     position: relative;
-    animation: fade 10s forwards;
+    animation: fade 1s forwards;
     animation-delay: 2.5s;
 }
 .comfort {
@@ -71,8 +71,7 @@ ul {
     top: 30%;
     left:30%;
     text-align: center;
-    cursor: pointer;
-    animation: fade 10s forwards;
+    animation: fade 5s forwards;
     animation-delay: 3s;
     letter-spacing: 20px;
 }
@@ -109,7 +108,7 @@ ul {
 .wrapper {
     opacity: 0; /* Initially invisible */
     transform: translateX(-100px); /* Start off the screen to the right */
-    animation: slideIn 3s forwards; /* Apply slide-in animation */
+    animation: slideIn 2s forwards; /* Apply slide-in animation */
     animation-delay: 5s; /* Delay for the wrapper */
 }
 .heartContainer{
@@ -128,7 +127,7 @@ ul {
     left: 5%;
     width: 5em;
     animation: roll 6s linear forwards;
-    animation-delay: 5s;
+    animation-delay: 4s;
 }
 .heart a{
     color: #f71c20;
@@ -164,9 +163,9 @@ ul {
 }
 @keyframes stretch {
     0% {transform: scaleY(1)}
-    25%{transform: scaleX(2.5) scaleY(2.5)}
-    50% {transform: scaleX(4) scaleY(4)}
-    75%{transform: scaleX(2.5) scaleY(2.5)}
+    25%{transform: scaleX(2) scaleY(2)}
+    50% {transform: scaleX(2.5) scaleY(2.5)}
+    75%{transform: scaleX(2) scaleY(2)}
     100% {transform: scaleY(1)}
 }
 @keyframes fade {
