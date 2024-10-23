@@ -20,8 +20,8 @@ a {
     color: #100340;
 }
 .text::before {
-content: "want to disappear forever";
-animation: switch infinite 15s;
+    content: "want to disappear forever";
+    animation: switch infinite 15s;
 }
 
 .left {

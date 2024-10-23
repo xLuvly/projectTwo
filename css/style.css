@@ -12,6 +12,8 @@ body{
     height: 100vh; 
     overflow: hidden;
 }
+
+/* Title & Credit edits */
 .title h1 {
     text-align: center; 
     font-size: 100px;
@@ -42,6 +44,8 @@ body{
     4px 4px 0px #e437a5, 
     6px 6px 0px  #7739ab;
 }
+
+/* Moon */
 .border{
     position: absolute;
     top: 50%;
@@ -61,6 +65,8 @@ h2, h3 {
 a {
     color: aqua;
 }
+
+/*Space and Stars*/
 .space{
     position: absolute;
     bottom: 0;
@@ -93,13 +99,10 @@ a {
     animation: rotate 180s linear infinite;
 
 }
+
+
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
     }
 }
-
-/* 
-pretty blue - #333fc0
-0c116b
-*/

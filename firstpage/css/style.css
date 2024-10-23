@@ -75,23 +75,6 @@ ul {
     animation-delay: 3s;
     letter-spacing: 20px;
 }
-
-/*
-.comfort ul {
-    height: 2em;
-}
-.comfort li{
-    font-family: 'Modak';
-    font-size: 120px;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-    left: -1.5%;
-    animation: roll 8s ease-in-out forwards;
-    animation-delay: 3s;
-}
-*/
-
 .middle {
 
     display: flex;
@@ -106,10 +89,10 @@ ul {
     left:15%;
 }
 .wrapper {
-    opacity: 0; /* Initially invisible */
-    transform: translateX(-100px); /* Start off the screen to the right */
-    animation: slideIn 2s forwards; /* Apply slide-in animation */
-    animation-delay: 5s; /* Delay for the wrapper */
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 2s forwards;
+    animation-delay: 5s;
 }
 .heartContainer{
     display: flex;
@@ -137,7 +120,6 @@ ul {
     animation: stretch 3s ease-in-out infinite;
 }
 
-
 @keyframes roll {
     0% {
         opacity: 1;
@@ -153,12 +135,12 @@ ul {
 }
 @keyframes slideIn {
     0% {
-        opacity: 0; /* Start invisible */
-        transform: translateX(-100px); /* Start from the right */
+        opacity: 0;
+        transform: translateX(-100px);
     }
     100% {
-        opacity: 1; /* Fully visible */
-        transform: translateX(0); /* Move to original position */
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 @keyframes stretch {
@@ -176,7 +158,6 @@ ul {
     100% {opacity: 1;
         transform: translateY(0);}
 }
-
 
 
 /*
